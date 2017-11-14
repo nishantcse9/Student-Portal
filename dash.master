@@ -1,0 +1,252 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="dash.master.cs" Inherits="dash" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>dash</title>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server" />
+		
+    <style>
+
+        
+    /*CSS for input of content pages*/
+    
+   
+
+
+    .lbl{
+        margin-top:20px;
+        // margin-left:-500px;
+         color:#333; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal;
+    }
+     .lbl1{
+         margin-left:30px;
+         color:#333; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal;
+    }
+
+    .tb {
+                margin-top: 30px;
+                width:200px;
+                height:20px;
+                background-color:white;
+                border-style:hidden;
+                border-radius:3px;
+                margin-left:10px;
+                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                 z-index: 1;
+                
+        }
+
+    .ddl {
+    margin-top: 70px;
+    margin-left: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .btn {
+    
+    width: 120px;
+    height: 27px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #333;
+    border-style: hidden;
+    color: white;
+    margin-top: 20px;
+    margin-left:10px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .btn:hover {
+        background-color: red;
+    }
+
+     .btn1 {
+    
+    width: 170px;
+    height: 27px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #333;
+    border-style: hidden;
+    color: white;
+    margin-top: 20px;
+    margin-left:10px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .btn1:hover {
+        background-color: red;
+    }
+
+.et {
+
+        margin-top:100px;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+}
+        
+      /*CSS for content ends*/  
+        
+        body    {
+                    background-color:#F0F0F0;
+                }
+
+        .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial;
+        
+    }
+
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      width:200px;
+    }
+
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      width:200px;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px; 
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      width:200px;
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+	    
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    #a1
+            {
+                float:right;
+                width:150px;
+            }
+
+    #b1{
+                margin-left:200px;
+                width:200px;
+                background-color:#333;
+                color:white;
+    }
+            
+    </style>
+        
+</head>
+<body>
+<div id="container">
+<form runat="server">
+
+    <div class="navbar">
+                    
+      <a href="student.aspx">STUDENT</a>
+                    
+      
+                    
+      <div class="dropdown">
+                        
+        <button class="dropbtn">COURSES
+          <i class="fa fa-caret-down"></i>
+        </button>
+                        
+        <div class="dropdown-content">
+          <a href="allcourses.aspx">ALL COURSES</a>
+          <a href="marks.aspx">REGISTRATIONS</a>
+
+        </div>
+                        
+      </div> 
+
+        <div class="dropdown">
+                        
+        <button class="dropbtn">ACCOUNTS
+          <i class="fa fa-caret-down"></i>
+        </button>
+                        
+        <div class="dropdown-content">
+          <a href="inventory.aspx">INVENTORY</a>
+          <a href="accounts.aspx">CASHBOOK</a>
+
+        </div>
+                        
+      </div> 
+
+        <div class="dropdown">
+                        
+        
+
+            
+
+            
+                        
+       
+                        
+      </div> 
+        <button id="b1">
+        <p id="sess">Welcome back <%:Session["username"] %>!</p>
+            </button>
+        <a href="login.aspx" id=a1>LOGOUT</a>
+
+                    
+</div>
+                
+    <asp:ContentPlaceHolder id="content1" runat="server" /> 
+</form>
+</div>
+</body>
+</html>

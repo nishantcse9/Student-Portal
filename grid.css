@@ -1,0 +1,42 @@
+﻿.myGridClass {
+    width: 100%;
+    /*this will be the color of the odd row*/
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 30px;
+ 
+}
+
+
+    /*data elements*/
+
+
+    .myGridClass td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+        text-align: center;
+    }
+
+
+
+
+    /*header elements*/
+
+    .myGridClass th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #505050;
+        border: solid 1px #FFFFFF;
+        font-size: 0.9em;
+    }
+
+
+    /*his will be the color of even row*/
+
+    .myGridClass .myAltRowClass {
+        background: #fcfcfc repeat-x top;
+    }
