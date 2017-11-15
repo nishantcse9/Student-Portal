@@ -22,7 +22,7 @@ FUNCTIONAITY:
   
 
   
-  The First page is login.aspx. Enter the credentials given below in the site. You will then be apple to access full 
+  The First page is login.aspx. Enter the credentials given below in the Login site. You will then be able to access full 
   functionality of the site.
   
   
