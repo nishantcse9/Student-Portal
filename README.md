@@ -8,6 +8,7 @@ I designed this application as part of my Lab Project. However have added more f
 
 LANGUAGE USED : ASP.NET , C#, SQL
 
+
 FUNCTIONAITY:
 
   -Authorisation (LOGIN)
@@ -17,3 +18,15 @@ FUNCTIONAITY:
   -Manage Inventory
   -Manage Accounts
   -PassBook
+  
+  
+
+  
+  The First page is login.aspx. Enter the credentials given below in the site. You will then be apple to access full 
+  functionality of the site.
+  
+  
+  LOGIN DETAILS
+  
+  UserName: Nishant
+  Password : 1234
